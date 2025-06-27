@@ -1,0 +1,79 @@
+body {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+.header-custom {
+  background-color: #999999;
+  color: white;
+}
+.main-content-custom {
+  background-color: #dddddd;
+  flex-grow: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 2rem 0;
+}
+.footer-custom {
+  background-color: #999999;
+  color: white;
+  padding: 1rem 0;
+  text-align: center;
+}
+
+.login-card {
+  background-color: #fff;
+  border: 1px solid #ddd;
+  border-radius: 0.5rem;
+  padding: 2rem;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  width: 100%;
+  max-width: 400px;
+  text-align: center;
+}
+.login-card h2 {
+  margin-bottom: 2rem;
+  color: #333;
+  font-weight: bold;
+}
+.login-card .form-control {
+  border-radius: 0.3rem;
+  border-color: #999999;
+}
+/* Style untuk tombol Back */
+.login-card .btn-light {
+  background-color: #999999;
+  border-color: #999999;
+  color: #ffffff;
+  /* Tambahkan display flex, align-items center, dan justify-content center */
+  display: flex; /* */
+  align-items: center; /* */
+  justify-content: center; /* */
+  gap: 0.5rem; /* */
+}
+
+/* Style saat tombol Back di-hover */
+.login-card .btn-light:hover {
+  background-color: #b14545;
+  border-color: #b14545;
+  color: #ffffff;
+}
+/* Style untuk tombol Login */
+.login-card .btn-login-submit {
+  background-color: #999999;
+  border-color: #999999;
+  color: white;
+  border-radius: 0.3rem;
+  padding: 0.75rem 1.5rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+}
+/* Style saat tombol Login di-hover */
+.login-card .btn-login-submit:hover {
+  background-color: #2a5ca7;
+  border-color: #2a5ca7;
+  color: #ffffff;
+}

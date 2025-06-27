@@ -1,0 +1,111 @@
+body {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+.header-custom {
+  background-color: #999999; /* Warna abu-abu dari desain sebelumnya */
+  color: white;
+}
+.main-content-custom {
+  background-color: #dddddd; /* Warna abu-abu terang dari desain sebelumnya */
+  flex-grow: 1;
+  padding: 2rem 0;
+  display: flex;
+  justify-content: center; /* Memposisikan kartu di tengah secara horizontal */
+  align-items: flex-start; /* Memposisikan kartu di bagian atas */
+}
+.footer-custom {
+  background-color: #999999; /* Warna abu-abu dari desain sebelumnya */
+  color: white;
+  padding: 1rem 0;
+  text-align: center;
+}
+
+.add-data-card {
+  background-color: #fff;
+  border: 1px solid #ddd;
+  border-radius: 0.5rem;
+  padding: 2rem;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  width: 100%;
+  max-width: 800px; /* Batasi lebar form agar tidak terlalu lebar */
+  margin-top: 2rem; /* Jarak dari header */
+}
+.add-data-card .card-header {
+  background-color: transparent;
+  border-bottom: 1px solid #dee2e6;
+  padding-bottom: 1.5rem;
+  margin-bottom: 1.5rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.add-data-card .card-header h2 {
+  margin-bottom: 0;
+  color: #333;
+  font-weight: bold;
+}
+.add-data-card .form-control {
+  border-radius: 0.3rem;
+  border-color: #999999; /* Warna border input konsisten dengan login page */
+}
+
+/* Grouping untuk input ganjil dan genap agar sejajar */
+.input-group-row {
+  display: flex;
+  flex-wrap: wrap; /* Izinkan wrap pada layar kecil */
+  gap: 1.5rem; /* Jarak antar kolom */
+  margin-bottom: 1.5rem; /* Jarak antar baris grup input */
+}
+.input-group-row .form-group-item {
+  flex: 1 1 calc(50% - 0.75rem); /* 50% lebar dikurangi setengah gap */
+  min-width: 250px; /* Lebar minimum agar tidak terlalu sempit */
+  display: flex; /* Tambahkan display flex */
+  flex-direction: column; /* Konten di dalam item flex vertikal */
+}
+
+/* Override margin-bottom default dari Bootstrap untuk label */
+.form-group-item label {
+  margin-bottom: 0.5rem; /* Jarak standar antara label dan input */
+}
+
+/* Style untuk tombol Back di halaman ini (konsisten dengan tombol "Back" di login) */
+.btn-back-custom {
+  background-color: #999999;
+  border-color: #999999;
+  color: #ffffff;
+  border-radius: 0.3rem;
+  padding: 0.5rem 1rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+}
+.btn-back-custom:hover {
+  background-color: #b14545; /* Contoh warna hover dari tombol "Back" sebelumnya */
+  border-color: #b14545;
+  color: #ffffff;
+}
+
+/* Style untuk tombol Save (konsisten dengan tombol "Login" sebelumnya) */
+.btn-save-custom {
+  background-color: #999999; /* Konsisten dengan header/footer */
+  border-color: #999999;
+  color: white;
+  border-radius: 0.3rem;
+  padding: 0.75rem 1.5rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+  width: 150px; /* Lebar tetap untuk tombol save */
+  /* *** PERUBAHAN DI SINI *** */
+  margin: auto; /* Menggeser tombol ke tengah horizontal di dalam kolomnya */
+  margin-top: auto; /* Dorong ke bawah jika ruang di atasnya kosong */
+}
+.btn-save-custom:hover {
+  background-color: #2a5ca7; /* Contoh warna hover dari tombol "Login" sebelumnya */
+  border-color: #2a5ca7;
+  color: white;
+}

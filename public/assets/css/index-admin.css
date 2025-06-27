@@ -1,0 +1,127 @@
+body {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+.header-custom {
+  background-color: #999999;
+  color: white;
+}
+.main-content-custom {
+  background-color: #dddddd;
+  flex-grow: 1;
+  padding: 2rem 0;
+}
+.footer-custom {
+  background-color: #999999;
+  color: white;
+  padding: 1rem 0;
+  text-align: center;
+}
+.search-input-container {
+  position: relative;
+  /* Mengontrol lebar kontainer pencarian */
+  max-width: 250px; /* Sesuaikan nilai ini untuk panjang pencarian */
+  flex-grow: 1; /* Izinkan tumbuh hingga max-width */
+}
+.search-input-container input {
+  border-radius: 5%; /* Kembali ke 5% radius untuk input pencarian */
+}
+.search-input-container .fa-search {
+  position: absolute;
+  left: 0.75rem; /* Ikon di sebelah kiri */
+  top: 50%;
+  transform: translateY(-50%);
+  color: #6c757d;
+}
+.search-input-container input.form-control {
+  padding-left: 2.5rem; /* Sesuaikan padding-left untuk ikon di kiri */
+  padding-right: 0.75rem; /* Padding standar di kanan teks input */
+}
+
+/* Custom styles for the Add button */
+.btn-add-custom {
+  background-color: #e9ecef; /* Light gray background */
+  border: 1px solid #ced4da; /* Light border */
+  color: #495057; /* Darker text */
+  border-radius: 0.3rem;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  padding: 0.5rem 1rem;
+  white-space: nowrap; /* Prevent text wrap */
+}
+.btn-add-custom:hover {
+  background-color: #dee2e6;
+  border-color: #adb5bd;
+  color: #495057; /* Pastikan teks tetap terlihat saat hover */
+}
+
+/* Table styles */
+.table-custom {
+  background-color: #fff;
+  border: 1px solid #dee2e6;
+  border-radius: 0.5rem;
+  overflow: hidden; /* Ensures border-radius applies to table content */
+}
+.table-custom thead th {
+  background-color: #f8f9fa; /* Light background for header */
+  border-bottom: 1px solid #dee2e6;
+  vertical-align: middle;
+  text-align: center; /* Center align header text */
+}
+.table-custom tbody tr {
+  border-bottom: 1px solid #dee2e6;
+}
+.table-custom tbody tr:last-child {
+  border-bottom: none; /* No border for the last row */
+}
+.table-custom tbody td {
+  vertical-align: middle;
+  padding: 0.75rem;
+}
+.table-custom .product-image-placeholder {
+  width: 60px; /* Lebar placeholder gambar */
+  height: 60px; /* Tinggi placeholder gambar */
+  border: 1px dashed #ccc;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #ccc;
+  font-size: 0.8rem;
+  overflow: hidden;
+  margin: auto; /* Center the image placeholder */
+}
+.table-custom .action-buttons {
+  display: flex;
+  gap: 0.5rem;
+  justify-content: center;
+}
+/* Mengatur agar tombol aksi tetap memiliki gaya btn Bootstrap saat diubah menjadi <a> */
+.table-custom .action-buttons .btn {
+  padding: 0.4rem 0.6rem;
+  font-size: 0.9rem;
+  /* Pastikan elemen <a> berfungsi seperti button */
+  display: inline-flex; /* Menggunakan inline-flex agar ikon dan teks (jika ada) sejajar */
+  align-items: center;
+  justify-content: center;
+  text-decoration: none; /* Hilangkan underline default link */
+  color: white; /* Pastikan warna teks/ikon default Bootstrap */
+}
+/* Pastikan warna ikon sesuai dengan warna tombolnya */
+.table-custom .action-buttons .btn-warning i {
+  color: white; /* Warna ikon pensil */
+}
+.table-custom .action-buttons .btn-danger i {
+  color: white; /* Warna ikon sampah */
+}
+
+/* Hover states for action buttons (now <a> tags) */
+.table-custom .action-buttons .btn-warning:hover {
+  background-color: #e0a800; /* Darker yellow on hover */
+  border-color: #e0a800;
+}
+.table-custom .action-buttons .btn-danger:hover {
+  background-color: #c82333; /* Darker red on hover */
+  border-color: #c82333;
+}
