@@ -94,10 +94,9 @@ Ikuti langkah-langkah di bawah ini untuk menginstal dan menjalankan aplikasi:
     - Password: `iminf` (password plain text yang Anda hash ke database)
 
 ## Screenshot Aplikasi
-
-- ![Form Utama User]
-- (image-1.png)
-- ![Form Login Admin](image-2.png)
-- ![Form Admin](image-3.png)
-- ![Form Edit Data](image-4.png)
-- ![Form Add Data](image-5.png)
+Form Utama User
+![Form Utama User](image-1.png)
+![Form Login Admin](image-2.png)
+![Form Admin](image-3.png)
+![Form Edit Data](image-4.png)
+![Form Add Data](image-5.png)
