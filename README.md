@@ -2,7 +2,7 @@
 
 UAS Teknologi WEB
 
-Ini adalah proyek aplikasi web sederhana "Barang Bekas" yang dibangun menggunakan framework PHP CodeIgniter 4. Aplikasi ini dirancang untuk mengelola daftar barang bekas dan memungkinkan pengguna melihat serta membeli produk melalui integrasi WhatsApp.
+Ini adalah proyek aplikasi web sederhana "Barang Bekas" yang dibangun menggunakan framework PHP CodeIgniter 4.4.5 Aplikasi ini dirancang untuk mengelola daftar barang bekas dan memungkinkan pengguna melihat serta membeli produk melalui integrasi WhatsApp.
 
 ## Deskripsi Proyek
 
