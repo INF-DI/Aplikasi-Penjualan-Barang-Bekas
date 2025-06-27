@@ -95,7 +95,8 @@ Ikuti langkah-langkah di bawah ini untuk menginstal dan menjalankan aplikasi:
 
 ## Screenshot Aplikasi
 
-- ![Form Utama User](image-1.png)
+- ![Form Utama User]
+- (image-1.png)
 - ![Form Login Admin](image-2.png)
 - ![Form Admin](image-3.png)
 - ![Form Edit Data](image-4.png)
